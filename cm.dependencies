@@ -1,0 +1,11 @@
+[
+  {
+    "repository": "android_device_sony_tamsui-common",
+    "target_path": "device/sony/tamsui-common"
+ },
+ {
+    "repository": "sony-kernel-msm7627",
+    "target_path": "kernel/sony/msm7627",
+    "branch": "android-msm-3.0-jb"
+  }
+]
