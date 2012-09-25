@@ -81,16 +81,6 @@ PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/config/thermald-semc.conf:system/etc/thermald-semc.conf \
    $(LOCAL_PATH)/config/thermald.conf:system/etc/thermald.conf
 
-#Offline charging animation
-PRODUCT_COPY_FILES += \
-    device/sony/tamsui-common/prebuilt/animations/charging_animation_01.png:system/semc/chargemon/data/charging_animation_01.png \
-    device/sony/tamsui-common/prebuilt/animations/charging_animation_02.png:system/semc/chargemon/data/charging_animation_02.png \
-    device/sony/tamsui-common/prebuilt/animations/charging_animation_03.png:system/semc/chargemon/data/charging_animation_03.png \
-    device/sony/tamsui-common/prebuilt/animations/charging_animation_04.png:system/semc/chargemon/data/charging_animation_04.png \
-    device/sony/tamsui-common/prebuilt/animations/charging_animation_05.png:system/semc/chargemon/data/charging_animation_05.png \
-    device/sony/tamsui-common/prebuilt/animations/charging_animation_06.png:system/semc/chargemon/data/charging_animation_06.png \
-    device/sony/tamsui-common/prebuilt/animations/charging_animation_07.png:system/semc/chargemon/data/charging_animation_07.png
-
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, vendor/sony/tapioca_ss/tapioca_ss-vendor.mk)
