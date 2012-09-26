@@ -6,8 +6,8 @@ USE_CAMERA_STUB := true
 #inherit from the common tamsui definitions
 -include device/sony/tamsui-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_SOURCE := kernel/sony/msm7627
-TARGET_KERNEL_CONFIG := cyanogen_tapioca_ss_defconfig
+TARGET_KERNEL_SOURCE := kernel/sony/msm7x27a
+TARGET_KERNEL_CONFIG := cyanogen_tapioca_defconfig
 #TARGET_PREBUILT_KERNEL := device/sony/tapioca_ss/prebuilt/kernel
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
@@ -26,6 +26,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
-BOARD_SDCARD_INTERNAL_DEVICE := /dev/block/mmcblk0p15
+BOARD_SDCARD_INTERNAL_DEVICE := /dev/block/mmcblk0p16
 
-TARGET_OTA_ASSERT_DEVICE := LT21i,LT21a,tapioca_ss
+TARGET_OTA_ASSERT_DEVICE := LT21i,LT21ii,tapioca_ss,tapioca_ds

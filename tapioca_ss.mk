@@ -40,21 +40,12 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 PRODUCT_COPY_FILES += \
    device/sony/tamsui-common/prebuilt/logo_M.rle:root/logo.rle \
 
-# Audio
-PRODUCT_COPY_FILE += \
-   $(LOCAL_PATH)/config/audio_policy.conf:system/etc/audio_policy.conf \
-
-# Configuration scripts
-PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/prebuilt/pre_hw_config.sh:system/etc/pre_hw_config.sh \
-   $(LOCAL_PATH)/prebuilt/hw_config.sh:system/etc/hw_config.sh
-
 # USB function switching
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/config/init.semc.usb.rc:root/init.semc.usb.rc
+   $(LOCAL_PATH)/config/init.sony.usb.rc:root/init.sony.usb.rc
 
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/config/fstab.semc:root/fstab.semc
+   $(LOCAL_PATH)/config/fstab.sony:root/fstab.sony
 
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/config/vold.fstab:system/etc/vold.fstab \
@@ -67,19 +58,17 @@ PRODUCT_COPY_FILES += \
 
 # Key layouts and touchscreen
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/config/atdaemon.kl:system/usr/keylayout/atdaemon.kl \
-   $(LOCAL_PATH)/config/clearpad.kl:system/usr/keylayout/clearpad.kl \
-   $(LOCAL_PATH)/config/clearpad.idc:system/usr/idc/clearpad.idc \
-   $(LOCAL_PATH)/config/tamsui-keypad.kl:system/usr/keylayout/tamsui-keypad.kl \
-   $(LOCAL_PATH)/config/gpio-key.kl:system/usr/keylayout/gpio-key.kl \
-   $(LOCAL_PATH)/config/keypad-pmic-tamsui.kl:system/usr/keylayout/keypad-pmic-tamsui.kl \
-   $(LOCAL_PATH)/config/pmic8058_pwrkey.kl:system/usr/keylayout/pmic8058_pwrkey.kl \
-   $(LOCAL_PATH)/config/simple_remote.kl:system/usr/keylayout/simple_remote.kl
-
-# Misc configuration files
-PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/config/thermald-semc.conf:system/etc/thermald-semc.conf \
-   $(LOCAL_PATH)/config/thermald.conf:system/etc/thermald.conf
+   $(LOCAL_PATH)/config/7k_handset.kl:system/usr/keylayout/7k_handset.kl \
+   $(LOCAL_PATH)/config/7x27a_kp.kl:system/usr/keylayout/7x27a_kp.kl \
+   $(LOCAL_PATH)/config/cyttsp_i2c_tma340.kl:system/usr/keylayout/cyttsp_i2c_tma340.kl \
+   $(LOCAL_PATH)/config/fih_gpio-keys.kl:system/usr/keylayout/fih_gpio-keys.kl \
+   $(LOCAL_PATH)/config/simple_remote_appkey.kl:system/usr/keylayout/simple_remote_appkey.kl \
+   $(LOCAL_PATH)/config/synaptics-t1320-tskey.kl:system/usr/keylayout/synaptics-t1320-tskey.kl \
+   $(LOCAL_PATH)/config/7x27a_kp.kcm:system/usr/keychars/7x27a_kp.kcm \
+   $(LOCAL_PATH)/config/cyttsp_i2c_tma340.kcm:system/usr/keychars/cyttsp_i2c_tma340.kcm \
+   $(LOCAL_PATH)/config/fih_gpio-keys.kcm:system/usr/keychars/fih_gpio-keys.kcm \
+   $(LOCAL_PATH)/config/simple_remote_appkey.kcm:system/usr/keychars/simple_remote_appkey.kcm \
+   $(LOCAL_PATH)/config/synaptics-t1320-tskey.kcm:system/usr/keychars/synaptics-t1320-tskey.kcm
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
