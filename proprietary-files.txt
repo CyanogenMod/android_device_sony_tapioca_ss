@@ -36,8 +36,8 @@ etc/firmware/TAP_TMA340_0007.hex
 etc/firmware/TAP_TMA340_0002.hex
 etc/firmware/TAP_TMA340_0006.hex
 etc/firmware/TAP_TMA340_0008.hex
-etc/firmware/yamato_pm4.fw
 etc/firmware/TAP_TMA340_0005.hex
+etc/firmware/yamato_pm4.fw
 etc/firmware/yamato_pfp.fw
 etc/bcm4330/sdio_g_pool_pno_pktfilter_keepalive_wapi_wme_idsup_idauth_p2p_aoe.bin
 etc/bcm4330/sdio-g-mfgtest-seqcmds.bin

@@ -1,16 +1,12 @@
 #!/sbin/sh
 
 # trigger amber LED
-echo '255' > /sys/class/leds/led_7-rgb1-red/brightness
-echo   '0' > /sys/class/leds/led_8-rgb2-green/brightness
-echo '255' > /sys/class/leds/led_9-rgb3-blue/brightness
+#echo '255' > /sys/class/leds/lcd-backlight/brightness
 
 cat /dev/input/event2 > /dev/keycheck&
 sleep 3
 
 # poweroff LED and button-backlight
-echo '0' > /sys/class/leds/led_7-rgb1-red/brightness
-echo '0' > /sys/class/leds/led_8-rgb2-green/brightness
-echo '0' > /sys/class/leds/led_9-rgb3-blue/brightness
+#echo '0' > /sys/class/leds/lcd-backlight/brightness
 
 kill -9 $!
