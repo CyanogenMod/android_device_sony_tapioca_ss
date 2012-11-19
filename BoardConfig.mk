@@ -12,11 +12,10 @@ BOARD_KERNEL_CMDLINE := device/sony/tapioca_ss/config/cmdline.txt
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 16
 
-# the following two sizes are generous guesses
-# since these partitions are not visible
+# Recovery
+TARGET_RECOVERY_INITRC := device/sony/tapioca_ss/recovery/init.rc
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01400000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
-
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 524288000
 BOARD_USERDATA_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -24,6 +23,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
+
 BOARD_SDCARD_INTERNAL_DEVICE := /dev/block/mmcblk0p16
 
-TARGET_OTA_ASSERT_DEVICE := LT21i,LT21ii,tapioca_ss,tapioca_ds
+TARGET_OTA_ASSERT_DEVICE := ST21i,ST21ii,tapioca_ss,tapioca_ds
