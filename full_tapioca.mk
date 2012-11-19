@@ -32,12 +32,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Charging animation resources
 $(call inherit-product, device/sony/tamsui-common/prebuilt/resources-mdpi.mk)
 
-# Inherit from tapioca_ss device
-$(call inherit-product, device/sony/tapioca_ss/tapioca_ss.mk)
+# Inherit from tapioca device
+$(call inherit-product, device/sony/tapioca/tapioca.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_tapioca_ss
-PRODUCT_DEVICE := tapioca_ss
+PRODUCT_NAME := full_tapioca
+PRODUCT_DEVICE := tapioca
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_MODEL := Xperia Tipo

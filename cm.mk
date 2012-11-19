@@ -1,4 +1,4 @@
-$(call inherit-product, device/sony/tapioca_ss/full_tapioca_ss.mk)
+$(call inherit-product, device/sony/tapioca/full_tapioca.mk)
 
 # Inherit CM common GSM stuff.
 $(call inherit-product, vendor/cm/config/gsm.mk)
@@ -11,5 +11,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ST21i_1257-4009 BUILD_FINGERPRINT=S
 TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 320
 
-PRODUCT_NAME := cm_tapioca_ss
-PRODUCT_DEVICE := tapioca_ss
+PRODUCT_NAME := cm_tapioca
+PRODUCT_DEVICE := tapioca
