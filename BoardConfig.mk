@@ -6,6 +6,8 @@ USE_CAMERA_STUB := true
 #inherit from the common tamsui definitions
 -include device/sony/tamsui-common/BoardConfigCommon.mk
 
+TARGET_SPECIFIC_HEADER_PATH += device/sony/tapioca/include
+
 TARGET_KERNEL_CONFIG := cyanogen_tapioca_defconfig
 BOARD_KERNEL_CMDLINE := device/sony/tapioca/config/cmdline.txt
 
