@@ -40,6 +40,7 @@ lib/egl/libq3dtools_adreno200.so
 lib/hw/camera.msm7x27a.so
 lib/hw/gps.default.so
 lib/hw/sensors.default.so
+lib/libdivxdrmdecrypt.so
 lib/libOmxAacDec.so
 lib/libOmxAacEnc.so
 lib/libOmxAdpcmDec.so
