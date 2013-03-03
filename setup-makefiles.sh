@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VENDOR=sony
-DEVICE=tapioca
+DEVICE=tapioca_ss
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 

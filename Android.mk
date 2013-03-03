@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),tapioca)
+ifeq ($(TARGET_DEVICE),tapioca_ss)
     include $(call first-makefiles-under,$(LOCAL_PATH))
 endif
