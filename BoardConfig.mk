@@ -4,7 +4,7 @@ USE_CAMERA_STUB := true
 -include vendor/sony/tapioca_ss/BoardConfigVendor.mk
 
 #inherit from the common tamsui definitions
--include device/sony/tamsui-common/BoardConfigCommon.mk
+-include device/sony/tamsui-common-legacy/BoardConfigCommon.mk
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/tapioca_ss/include
 
